@@ -1,0 +1,27 @@
+{
+  "name": "fs-open-locked",
+  "version": "0.0.0",
+  "description": "Open a file locked so only one process has access at a given time",
+  "main": "index.js",
+  "dependencies": {
+    "nan": "^2.6.2",
+    "node-gyp-build": "^3.1.0"
+  },
+  "devDependencies": {},
+  "prebuild": {
+    "test": "index.js"
+  },
+  "scripts": {
+    "install": "node-gyp-build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mafintosh/fs-open-locked.git"
+  },
+  "author": "Mathias Buus (@mafintosh)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mafintosh/fs-open-locked/issues"
+  },
+  "homepage": "https://github.com/mafintosh/fs-open-locked"
+}
