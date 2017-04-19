@@ -26,7 +26,7 @@ open('my-lock-file', 'w', function (err, fd) {
 
 #### `open(filename, flags, [mode], callback)`
 
-Similar to [fs.open](https://nodejs.org/dist/latest/docs/api/fs.html#fs_fs_open_path_flags_mode_callback) except will fail if another process has already opened this file.
+Similar to [fs.open](https://nodejs.org/dist/latest/docs/api/fs.html#fs_fs_open_path_flags_mode_callback) except will fail with `err.code` set to `ELOCKED` if another process has already opened this file.
 Callback is called with `(err, fd)` where `fd` is a file descriptor.
 When the descriptor is closed another process is free to open the file.
 
